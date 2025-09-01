@@ -5,7 +5,7 @@
 
   place-content: center;
 
-  gap: 46px 48px;
+  gap: $card-gap-horizontal $card-gap-vertical;
 
   grid-template-columns: repeat(1, $card-width);
 

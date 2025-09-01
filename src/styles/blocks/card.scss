@@ -3,7 +3,7 @@
   width: $card-width;
   border-radius: 5px;
   border: 1px solid $grey-elements;
-  transition: all $animation-duration;
+  transition: transform $animation-duration;
 
   &__image {
     display: flex;
@@ -21,7 +21,7 @@
     flex-direction: column;
   }
 
-  &__name {
+  &__title {
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
@@ -91,7 +91,9 @@
     text-align: center;
     line-height: 38px;
     border: 1px solid $blue-accent;
-    transition: all $animation-duration;
+    transition:
+      background-color,
+      color $animation-duration;
 
     &:hover {
       background-color: #fff;
@@ -102,7 +104,7 @@
   &:hover {
     transform: scale(1.2);
 
-    .card__name {
+    .card__title {
       color: #34568b;
     }
   }
